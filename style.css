@@ -1,59 +1,268 @@
-/* styles pour le corps du document */
-
 body {
-    font-family: sans-serif;
+    background-image: url("https://img.freepik.com/premium-photo/black-fabric-background-with-copy-space_46250-2954.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 27px;
+    line-height: 1.5;
     margin: 0;
     padding: 0;
 }
-
-
-/* styles pour l'en-tête */
 
 header {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
-    padding: 1rem;
+    text-align: center;
+    padding: 20px;
 }
 
-header h1 {
+h1 {
+    font-size: 48px;
     margin: 0;
 }
 
-header nav ul {
-    list-style: none;
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#myButton,
+#button {
+    background-color: #e62b1e;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#myButton:hover,
+#button:hover {
+    background-color: #ff5c55;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.card-containers {
+    display: flex;
+    flex-direction: initial;
+    height: auto;
+    align-items: center;
+    justify-content: initial;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.middle,
+.left,
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px;
+    margin-right: 250px;
+}
+
+#imageBlock_Weapon1 {
+    margin-left: 50px;
+}
+
+#imageBlock_Weapon2 {
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+.middle img,
+.left img,
+.right img {
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.left p,
+.right p {
+    margin: 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .card-container {
+        width: 90%;
+    }
+    .button-container {
+        flex-direction: column;
+    }
+    #myButton,
+    #button {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.video-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.banner2 {
+    background-image: url("https://media.contentapi.ea.com/content/dam/apex-legends/images/2023/01/apex-hero-md-s16-home-page-7x2-xl.jpg.adapt.crop7x2.1920w.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    color: #fff;
+}
+
+.banner {
+    background-image: url("https://media.contentapi.ea.com/content/dam/apex-legends/common/hunted/apex-section-bg-battle-royale-homepage-xl.jpg.adapt.1920w.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    color: #fff;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.banner h1,
+.banner p,
+.banner button {
     margin: 0;
     padding: 0;
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.banner button {
+    background-color: #ff003c;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.weapon-container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-header nav li {
-    margin-right: 1rem;
-}
-
-header nav li:last-child {
-    margin-right: 0;
-}
-
-header nav a {
-    color: #fff;
-    text-decoration: none;
-}
-
-
-/* styles pour le contenu principal */
-
-main {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-}
-
-
-/* styles pour le pied de page */
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
+.banner3 {
+    background-image: url("https://pbs.twimg.com/ext_tw_video_thumb/1429848774256435201/pu/img/CajogMUhZIx6COuU.jpg:large");
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    color: #fff;
+}
+
+.banner3 p,
+.banner3 h2 {
+    margin: 0;
+    padding: 10px;
+}
+
+.white-section {
+    background-color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.white-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
 }

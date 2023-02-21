@@ -2,30 +2,88 @@
 <html>
 
 <head>
+    <title>Apex Legends Generator</title>
     <meta charset="UTF-8">
-    <title>Titre de votre page</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="./Apex_generator.js"></script>
+
 </head>
 
 <body>
+
     <header>
-        <h1>Titre de votre site</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Apex Legends Random Generator</h1>
     </header>
-    <main>
-        <h2>Contenu de la page</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius, velit eu malesuada accumsan, est urna bibendum justo, a semper metus elit ac turpis. Phasellus id lacus nec nisl lobortis sollicitudin sed in augue. Integer euismod purus eget
-            enim tristique, ut semper velit suscipit. Fusce maximus, magna nec luctus blandit, mi nibh laoreet lorem, vel tristique sapien augue ut odio.</p>
-    </main>
-    <footer>
-        <p>Droit d'auteur © Votre Nom</p>
-    </footer>
+    <!--Intro-->
+    <section class="video-section">
+        <div class="video-container">
+            <video autoplay loop muted playsinline>
+            <source src="https://media.contentapi.ea.com/content/dam/apex-legends/videos/2023/02/apex-legends-revelry-section-bg-video-xl.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="content">
+            <h1 style="font-size: 50px" ;>Apex Legends</h1>
+            <p style="font-size: 30px" ;>Apex Legends is a free-to-play battle royale video game developed by Respawn Entertainment and published by Electronic Arts.<br> It is set in the Titanfall universe and features teams of three players competing against each other on a large
+                map, with the last team standing being declared the winner. <br> The game is known for its unique cast of playable characters, known as "Legends," each with their own unique abilities and playstyles.</p>
+        </div>
+    </section>
+
+    <!--Generate Legends-->
+    <section class="banner">
+        <div class="left">
+            <div class="legend-container">
+                <h1>Generate a character</h1>
+                <p>Pick a random character between all the characters included in the game.</p>
+                <button id="myButton" onclick="getCharacters()">Generate Character</button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="container">
+                <div id="myContainer_Character" class="card-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--Generate Weapons-->
+    <section class="banner2">
+        <div class="left">
+
+        </div>
+        <div class="Middle">
+            <div class="container">
+                <div class="weapon-container">
+                    <div id="myContainer_Weapon" class="card-containers"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="legend-container">
+                <h1>Generate a Weapon</h1>
+                <p>Pick a random character between all the characters included in the game.</p>
+                <button id="button" onclick="getWeapons()">Generate Weapons</button>
+            </div>
+        </div>
+    </section>
+
+    <!--Generate Full Stuff -->
+
+    <section class="white-section">
+        <div class="section">
+            <p style="color: black;">Or you can directly generate a full stuff:</p>
+            <button id="button" onclick="getStuff()">Generate Full Stuff</button>
+        </div>
+
+    </section>
+
+
+    <!-- Formulaire-->
+    <section class="banner3">
+        <h2> Contact me </h2>
+        <p> For more informations or requests, <br> Please contact me at the email adress : barberottheo@gmail.com </p>
+    </section>
+
 </body>
 
 </html>

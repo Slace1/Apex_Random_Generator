@@ -42,6 +42,12 @@ const weaponCategories = {
         { name: 'Bocek Compound Bow', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/0/02/Bocek_Compound_Bow.png/revision/latest/scale-to-width-down/314?cb=20230205215552' },
         { name: 'Triple Take', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/d/d9/Triple_Take.png/revision/latest/scale-to-width-down/314?cb=20210823030642' },
         { name: '30-30 Repeater', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/86/30-30_Repeater.png/revision/latest/scale-to-width-down/314?cb=20220911173300' }
+    ],
+    Empty: [
+        { name: 'Punch', image: 'https://ssb.wiki.gallery/images/thumb/5/53/Little_Mac_SSBU.png/1200px-Little_Mac_SSBU.png' },
+        { name: 'Arc Star', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/d/d8/Arc_Star.svg/revision/latest/scale-to-width-down/100?cb=20230207220626' },
+        { name: 'Frag Grenade', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c6/Frag_Grenade.svg/revision/latest/scale-to-width-down/100?cb=20221126185111' },
+        { name: 'Thermite Grenade', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/ae/Thermite_Grenade.svg/revision/latest?cb=20230207220633' }
     ]
 };
 
@@ -79,22 +85,100 @@ function getRandomWeapon() {
     const randomWeapon = randomCategory[Math.floor(Math.random() * randomCategory.length)];
     return {
         name: randomWeapon.name,
-        image: randomWeapon.image,
+        imageUrl: randomWeapon.image,
         category: randomCategoryKey
     };
 }
 
 // Fonction pour générer aléatoirement un personnage
 function getRandomCharacter() {
-    return characters[Math.floor(Math.random() * characters.length)];
+    const randomCharacter = characters[Math.floor(Math.random() * characters.length)];
+    console.log(randomCharacter.image)
+    return {
+        name: randomCharacter.name,
+        imageUrl: randomCharacter.image
+    };
+
 }
 
-// Génération aléatoire d'une arme et d'un personnage
-const randomWeapon = getRandomWeapon();
-const randomCharacter = getRandomCharacter();
+function getCharacters() {
+    // Vérifier si le bloc d'image existe déjà
+    const existingImageBlock = document.getElementById("imageBlock_Character");
 
-// Affichage du résultat
-console.log('Arme générée aléatoirement : ' + randomWeapon.name + ' (' + randomWeapon.category + ')');
-console.log('URL de l\'image : ' + randomWeapon.image);
-console.log('Personnage généré aléatoirement : ' + randomCharacter.name);
-console.log('URL de l\'image : ' + randomCharacter.image);
+    if (existingImageBlock) {
+        // Si le bloc existe déjà, le réutiliser en mettant à jour le contenu
+        const { name, imageUrl } = getRandomCharacter();
+        existingImageBlock.querySelector("img").src = imageUrl;
+        existingImageBlock.querySelector("p").textContent = name;
+    } else {
+        // Si le bloc n'existe pas encore, le créer et l'ajouter à la page
+        const { name, imageUrl } = getRandomCharacter();
+
+        // Création du bloc image contenant l'image et le nom
+        const img = document.createElement("img");
+        img.src = imageUrl;
+        const nameElement = document.createElement("p");
+        nameElement.textContent = name;
+        const imageBlock = document.createElement("div");
+        imageBlock.id = "imageBlock_Character";
+        imageBlock.appendChild(img);
+        imageBlock.appendChild(nameElement);
+
+        // Ajout du bloc image à un élément existant dans la page
+        const container = document.getElementById("myContainer_Character");
+        container.appendChild(imageBlock);
+    }
+}
+
+function getWeapons() {
+    const weapon1 = getRandomWeapon();
+    const weapon2 = getRandomWeapon();
+
+    const weaponBlock1 = document.getElementById("imageBlock_Weapon1");
+    const weaponBlock2 = document.getElementById("imageBlock_Weapon2");
+
+    // Créer le bloc d'arme 1 s'il n'existe pas encore
+    if (!weaponBlock1) {
+        const img1 = document.createElement("img");
+        img1.src = weapon1.imageUrl;
+        const nameElement1 = document.createElement("p");
+        nameElement1.textContent = weapon1.name.concat(" (" + weapon1.category + ")");
+        const imageBlock1 = document.createElement("div");
+        imageBlock1.id = "imageBlock_Weapon1";
+        imageBlock1.appendChild(img1);
+        imageBlock1.appendChild(nameElement1);
+
+        const container = document.getElementById("myContainer_Weapon");
+        container.appendChild(imageBlock1);
+    } else { // Mise à jour de l'arme 1
+        weaponBlock1.querySelector("img").src = weapon1.imageUrl;
+        weaponBlock1.querySelector("p").textContent = weapon1.name.concat(" (" + weapon1.category + ")");
+    }
+
+    // Créer le bloc d'arme 2 s'il n'existe pas encore
+    if (!weaponBlock2) {
+        const img2 = document.createElement("img");
+        img2.src = weapon2.imageUrl;
+        const nameElement2 = document.createElement("p");
+        nameElement2.textContent = weapon2.name.concat(" (" + weapon2.category + ")");
+        const imageBlock2 = document.createElement("div");
+        imageBlock2.id = "imageBlock_Weapon2";
+        imageBlock2.appendChild(img2);
+        imageBlock2.appendChild(nameElement2);
+
+        const container = document.getElementById("myContainer_Weapon");
+        container.appendChild(imageBlock2);
+    } else { // Mise à jour de l'arme 2
+        weaponBlock2.querySelector("img").src = weapon2.imageUrl;
+        weaponBlock2.querySelector("p").textContent = weapon2.name.concat(" (" + weapon2.category + ")");
+    }
+}
+
+
+
+
+
+function getStuff() {
+    getCharacters();
+    getWeapons();
+}
