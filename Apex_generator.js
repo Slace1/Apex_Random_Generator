@@ -30,7 +30,7 @@ const weaponCategories = {
         { name: 'R-301', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/f/f1/R-301_Carbine.png/revision/latest/scale-to-width-down/314?cb=20220604191827' },
         { name: 'VK-47 Flatline', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/f/f1/VK-47_Flatline.png/revision/latest/scale-to-width-down/314?cb=20220511040308' },
         { name: 'Havoc', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/e/ec/HAVOC_Rifle.png/revision/latest/scale-to-width-down/314?cb=20220616154439' },
-        { name: 'Nemesis Burst', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/b/b8/Nemesis_Burst_AR.png/revision/latest/scale-to-width-down/314?cb=20220324193610' }
+        { name: 'Nemesis Burst', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/b/b8/Nemesis_Burst_AR.png/revision/latest/scale-to-width-down/314?cb=20230215125901' }
     ],
     Guns: [
         { name: 'P2020', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c1/P2020.png/revision/latest/scale-to-width-down/314?cb=20210815055000' },
