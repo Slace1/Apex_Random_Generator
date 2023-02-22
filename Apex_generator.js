@@ -1,47 +1,47 @@
 // Liste des catégories d'armes
 const weaponCategories = {
     SMGs: [
-        { name: 'R-99', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/d/d5/R-99_SMG.png/revision/latest/scale-to-width-down/314?cb=20220829171808' },
-        { name: 'Alternator', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/e/e9/Alternator_SMG.png/revision/latest/scale-to-width-down/314?cb=20220513124637' },
-        { name: 'Prowler Burst', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/b/bf/Prowler_Burst_PDW.png/revision/latest/scale-to-width-down/314?cb=20220829140000' },
-        { name: 'Volt', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/6/60/Volt_SMG.png/revision/latest/scale-to-width-down/314?cb=20210717062422' },
-        { name: 'C.A.R SMG', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/1/13/C.A.R._SMG.png/revision/latest/scale-to-width-down/314?cb=20211104170312' }
+        { name: 'R-99', image: './images/R-99_SMG.webp' },
+        { name: 'Alternator', image: './images/Alternator_SMG.webp' },
+        { name: 'Prowler Burst', image: './images/Prowler_Burst_PDW.webp' },
+        { name: 'Volt', image: './images/Volt_SMG.webp' },
+        { name: 'C.A.R SMG', image: './images/C.A.R._SMG.webp' }
     ],
     Shotguns: [
-        { name: 'Mastiff', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c9/Mastiff_Shotgun.png/revision/latest/scale-to-width-down/314?cb=20210818084651' },
-        { name: 'Peacekeeper', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/6/64/Peacekeeper.png/revision/latest/scale-to-width-down/314?cb=20210814095843' },
-        { name: 'Mozambique', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/ae/Mozambique_Shotgun.png/revision/latest/scale-to-width-down/314?cb=20210813094328' },
-        { name: 'Eva 8 Auto', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/97/EVA-8_Auto.png/revision/latest/scale-to-width-down/314?cb=20210817041450' }
+        { name: 'Mastiff', image: './images/Mastiff_Shotgun.webp' },
+        { name: 'Peacekeeper', image: './images/Peacekeeper.webp' },
+        { name: 'Mozambique', image: './images/Mozambique_Shotgun.webp' },
+        { name: 'Eva 8 Auto', image: './images/EVA-8_Auto.webp' }
     ],
     LMGs: [
-        { name: 'M600 Spitfire', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/f/f2/M600_Spitfire.png/revision/latest/scale-to-width-down/314?cb=20220919090724' },
-        { name: 'Devotion', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/8c/Devotion_LMG.png/revision/latest/scale-to-width-down/314?cb=20220917210303' },
-        { name: 'L-Star', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/0/01/L-STAR_EMG.png/revision/latest/scale-to-width-down/314?cb=20220915044251' },
-        { name: 'Rampage LMG', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/20/Rampage_LMG.png/revision/latest/scale-to-width-down/314?cb=20210807042402' }
+        { name: 'M600 Spitfire', image: './images/M600_Spitfire.webp' },
+        { name: 'Devotion', image: './images/Devotion_LMG.webp' },
+        { name: 'L-Star', image: './images/L-STAR_EMG.webp' },
+        { name: 'Rampage LMG', image: './images/Rampage_LMG.webp' }
     ],
     SniperRifles: [
-        { name: 'Longbow DMR', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/4/46/Longbow_DMR.png/revision/latest/scale-to-width-down/314?cb=20220906141950' },
-        { name: 'Kraber 50 Cal Sniper', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/f/f5/Kraber_.50-Cal_Sniper.png/revision/latest/scale-to-width-down/314?cb=20220903210502' },
-        { name: 'Charge Rifle', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/2b/Charge_Rifle.png/revision/latest/scale-to-width-down/314?cb=20221009165709' },
-        { name: 'Sentinel', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/91/Sentinel.png/revision/latest/scale-to-width-down/314?cb=20220515012656' }
+        { name: 'Longbow DMR', image: './images/Longbow_DMR.webp' },
+        { name: 'Kraber 50 Cal Sniper', image: './images/Kraber_.50-Cal_Sniper.webp' },
+        { name: 'Charge Rifle', image: './images/Charge_Rifle.webp' },
+        { name: 'Sentinel', image: './images/Sentinel.webp' }
     ],
     AR: [
-        { name: 'Hemlok Burst', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/7/74/Hemlok_Burst_AR.png/revision/latest/scale-to-width-down/314?cb=20220617000007' },
-        { name: 'R-301', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/f/f1/R-301_Carbine.png/revision/latest/scale-to-width-down/314?cb=20220604191827' },
-        { name: 'VK-47 Flatline', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/f/f1/VK-47_Flatline.png/revision/latest/scale-to-width-down/314?cb=20220511040308' },
-        { name: 'Havoc', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/e/ec/HAVOC_Rifle.png/revision/latest/scale-to-width-down/314?cb=20220616154439' },
-        { name: 'Nemesis Burst', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/b/b8/Nemesis_Burst_AR.png/revision/latest/scale-to-width-down/314?cb=20230215125901' }
+        { name: 'Hemlok Burst', image: './images/Hemlok_Burst_AR.webp' },
+        { name: 'R-301', image: './images/R-301_Carbine.webp' },
+        { name: 'VK-47 Flatline', image: './images/VK-47_Flatline.webp' },
+        { name: 'Havoc', image: './images/HAVOC_Rifle.webp' },
+        { name: 'Nemesis Burst', image: './images/Nemesis_Burst_AR.webp' }
     ],
     Guns: [
-        { name: 'P2020', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c1/P2020.png/revision/latest/scale-to-width-down/314?cb=20210815055000' },
-        { name: 'Wingman', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/0/09/Wingman.png/revision/latest/scale-to-width-down/314?cb=20210813090820' },
-        { name: 'RE-45 Auto', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/25/RE-45_Auto.png/revision/latest/scale-to-width-down/314?cb=20210816090119' },
+        { name: 'P2020', image: './images/P2020.webp' },
+        { name: 'Wingman', image: './images/Wingman.webp' },
+        { name: 'RE-45 Auto', image: './images/RE-45_Auto.webp' },
     ],
     Marksman: [
-        { name: 'G7 Scout', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/e/eb/G7_Scout.png/revision/latest/scale-to-width-down/314?cb=20220830141535' },
-        { name: 'Bocek Compound Bow', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/0/02/Bocek_Compound_Bow.png/revision/latest/scale-to-width-down/314?cb=20230205215552' },
-        { name: 'Triple Take', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/d/d9/Triple_Take.png/revision/latest/scale-to-width-down/314?cb=20210823030642' },
-        { name: '30-30 Repeater', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/86/30-30_Repeater.png/revision/latest/scale-to-width-down/314?cb=20220911173300' }
+        { name: 'G7 Scout', image: './images/G7_Scout.webp' },
+        { name: 'Bocek Compound Bow', image: './images/Bocek_Compound_Bow.webp' },
+        { name: 'Triple Take', image: './images/Triple_Take.webp' },
+        { name: '30-30 Repeater', image: './images/30-30_Repeater.webp' }
     ],
     Empty: [
         { name: 'Punch', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/97/ConceptArt_Corwin_Paradinha_Wraith_Heirloom.jpg/revision/latest/scale-to-width-down/150?cb=20190918231125' },
