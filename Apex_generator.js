@@ -44,10 +44,10 @@ const weaponCategories = {
         { name: '30-30 Repeater', image: './images/30-30_Repeater.webp' }
     ],
     Empty: [
-        { name: 'Punch', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/97/ConceptArt_Corwin_Paradinha_Wraith_Heirloom.jpg/revision/latest/scale-to-width-down/150?cb=20190918231125' },
-        { name: 'Arc Star', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/d/d8/Arc_Star.svg/revision/latest/scale-to-width-down/100?cb=20230207220626' },
-        { name: 'Frag Grenade', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c6/Frag_Grenade.svg/revision/latest/scale-to-width-down/100?cb=20221126185111' },
-        { name: 'Thermite Grenade', image: 'https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/ae/Thermite_Grenade.svg/revision/latest?cb=20230207220633' }
+        { name: 'Punch', image: './images/punch.webp' },
+        { name: 'Arc Star', image: './images/Arc_Star.png' },
+        { name: 'Frag Grenade', image: './images/Frag_Grenade.png' },
+        { name: 'Thermite Grenade', image: './images/Thermite_Grenade.svg' }
     ]
 };
 
